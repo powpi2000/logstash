@@ -26,6 +26,8 @@ RUN \
 RUN wget https://artifacts.elastic.co/downloads/logstash/logstash-5.5.0.deb && dpkg -i logstash-5.5.0.deb
 RUN /usr/share/logstash/bin/logstash-plugin update logstash-filter-useragent
 COPY ./GeoLite2-City.mmdb /etc/logstash/
+COPY ./logstash.yml /etc/logstash/
+COPY ./log4j2.properties  /etc/logstash/
 RUN mkdir -p /etc/logstash/conf.d
 #RUN echo 'extension=mongodb.so' > /etc/php/7.0/fpm/conf.d/10-mongodb.ini
 
