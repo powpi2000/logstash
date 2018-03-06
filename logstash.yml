@@ -1,0 +1,9 @@
+config.reload.interval: 60
+path.config: /etc/logstash/conf.d
+path.data: /var/lib/logstash
+path.logs: /var/log/logstash
+path.config: /usr/share/logstash/pipeline
+pipeline.batch.size: 1000
+pipeline.output.workers: 8
+pipeline.workers: 8
+xpack.monitoring.enabled: false
