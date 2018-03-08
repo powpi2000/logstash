@@ -30,7 +30,7 @@ COPY ./logstash.yml /etc/logstash/
 COPY ./log4j2.properties  /etc/logstash/
 RUN mkdir -p /etc/logstash/conf.d
 #RUN echo 'extension=mongodb.so' > /etc/php/7.0/fpm/conf.d/10-mongodb.ini
-
+# test
 #RUN     aptitude update &&  aptitude install imagemagick
 
 #ENTRYPOINT      ["/entrypoint.sh"]
